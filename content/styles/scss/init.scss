@@ -1,0 +1,22 @@
+// Variaveis de reutilização
+$total: 940;
+$cor1: #20c2c8;
+$corcancela: #e62f38;
+$corconfirma: #66bf3e;
+$cortext: #000000;
+$font: "Helvetica";
+
+@import 'config/_mixins';
+@import 'general/_reset';
+@import 'layout/_main';
+@import 'components/*.scss';
+
+.center {
+	padding: 0 4%;
+	max-width: 100%;
+	box-sizing: border-box;
+	@include breakpoint(desktop){
+	    padding: 0;
+	    max-width: 100%;
+  	}
+}
